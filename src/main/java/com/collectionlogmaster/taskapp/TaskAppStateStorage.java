@@ -1,7 +1,7 @@
 package com.collectionlogmaster.taskapp;
 
-import com.collectionlogmaster.taskapp.domain.CompletedTask;
 import com.collectionlogmaster.domain.TaskTier;
+import com.collectionlogmaster.taskapp.domain.CompletedTask;
 import com.collectionlogmaster.taskapp.response.UserProfileResponse;
 import com.collectionlogmaster.util.EventBusSubscriber;
 import java.util.Set;
