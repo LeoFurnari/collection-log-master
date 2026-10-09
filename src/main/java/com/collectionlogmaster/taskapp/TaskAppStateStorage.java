@@ -1,6 +1,7 @@
 package com.collectionlogmaster.taskapp;
 
 import com.collectionlogmaster.taskapp.domain.CompletedTask;
+import com.collectionlogmaster.domain.TaskTier;
 import com.collectionlogmaster.taskapp.response.UserProfileResponse;
 import com.collectionlogmaster.util.EventBusSubscriber;
 import java.util.Set;
@@ -48,7 +49,8 @@ public class TaskAppStateStorage extends EventBusSubscriber {
 			res.isOfficial(),
 			res.isLmsEnabled(),
 			res.hasMigrated(),
-			completedTasks
+			completedTasks,
+			TaskTier.valueOf(res.getHideBelow().toUpperCase())
 		);
 
 		if (state.equals(newState)) {

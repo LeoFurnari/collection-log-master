@@ -10,6 +10,7 @@ public class UserProfileResponse {
 	private final String username;
 	private final boolean isOfficial;
 	private final boolean isLmsEnabled;
+	private final String hideBelow;
 	@Accessors(fluent = true)
 	private final boolean hasMigrated;
 	private final String activeTaskId;
