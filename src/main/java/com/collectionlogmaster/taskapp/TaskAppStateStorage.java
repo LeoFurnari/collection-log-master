@@ -50,7 +50,7 @@ public class TaskAppStateStorage extends EventBusSubscriber {
 			res.isLmsEnabled(),
 			res.hasMigrated(),
 			completedTasks,
-			TaskTier.valueOf(res.getHideBelow().toUpperCase())
+			res.getHideBelow()
 		);
 
 		if (state.equals(newState)) {
